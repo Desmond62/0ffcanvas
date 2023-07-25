@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#con{
+    max-width: 200px;
+    height: 280px;
+    background-color: black;
+    margin: auto;
+    text-align: center; 
+    border-radius: 20px; 
+    border: 5px solid grey;
+}
+.market{
+    font-weight: 750;
+}
+
+.inpt{
+    padding-top: 15px;
+}
+.inpt input{
+    width: 90%;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+/* .trol ::placeholder{
+    float: right;
+} */
+::placeholder{
+    float: right;
+}
+.bt{
+    margin-top: 10px;
+}
+.bt button{
+    padding: 3px 6px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.bt2{
+    margin: 8px 0px;
+   
+}
+.bt button:hover{
+    background-color: rgb(192, 188, 188);
+    transition: .1s ease-in;}
+.bt2 button:hover{
+    background-color: rgb(192, 188, 188);
+    transition: .1s ease-in;
+    }
+.bt2 button{
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 2px;
+
+}
+
+.pin{
+    display: flex;
+    align-items: center;
+}
+.shop{
+ border: 5px solid ghostwhite;
+    background-color: rgb(232, 243, 200);
+}
+
+.ping{
+    margin-top: 50px;
+}
+.ping h2{
+ color: green;  
+ font-weight: 800; 
+ font-family: Arial, Helvetica, sans-serif;
+ animation: scale 5s infinite;
+}
+@keyframes scale{
+    0% {color: green;}
+    50% {color: grey;}
+    100% {color: goldenrod;}
+}
+.ping p{
+    font-weight: 800;
+    /* animation-name: move;
+    animation-delay: 10s;
+    animation-duration: 5s; */
+}
+@keyframes move{
+    0% {color: green;}
+    /* 50% {color: grey;} */
+    100% {color: grey;}
+}
+.free h6{
+    font-weight: 750;
+}
+.free p{
+    font-size: 15px;
+    color: skyblue;
+    font-weight: 700;
+}
+.herbal h6{
+    font-weight: 750;
+}
+.more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.more p{
+    color: green;
+}
+.trol{
+    position: relative;
+  
+}
+.trol input{
+    font-size: 12px;
+}
+.trol ::placeholder{
+    float: left;
+}
+.trol i{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    font-weight: 800;
+    color: skyblue;
+}
+.basket i{
+    color: skyblue;
+    font-size: 25px;
+}
+
+.nav2{
+ border: 10px solid rgb(144, 182, 5);
+ border-top-right-radius: 50px;
+ border-bottom-right-radius: 50px;
+
+    background-color: rgb(106, 171, 8);
+}
+.nav2 a{
+    color: white;
+}
+.nav2 a:hover{
+transition: .3s ease-in-out;
+    color: rgb(232, 222, 222);
+}
+
+.nav3{
+    border-left: 7px solid ghostwhite;
+    border-right: 7px solid ghostwhite;
+    border-bottom: 7px solid ghostwhite;
+}
+
+
+.wish button{
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+    font-weight: 750;
+    color: grey;
+}
+.wish button:hover{
+ color: rgb(196, 195, 195); 
+}
+.divs{
+    height: 350px;
+    border: 5px solid gainsboro;
+    /* margin: -20px; */
+    background-color: ghostwhite;
+}
+.text6{
+margin: -20px;
+}
+.text6 h4{
+font-weight: 700;
+}
+.divs img{
+    margin-top: 40px;
+}
+
+.offer1 i{
+    font-size: 50px;
+    color: grey;
+}
+.sab{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid gainsboro; 
+    text-align: center; 
+    padding: 10px 0px 10px 0px; 
+}
+.offer2 p{
+font-size: 12px;
+border-top: 1px solid rgb(70, 69, 69);
+}
+
+.offer2 h2{
+    font-weight: 500;
+    color: green;
+    font-size: 20px;
+}
+.head2 h5{
+    background-color: skyblue;
+    padding: 10px;
+    border: 5px solid rgb(41, 165, 254);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+}
+.tab1{
+    border-bottom: 2px solid grey;
+}
+.head3 h5{
+    border: 5px solid rgb(20, 112, 12);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(106, 171, 8);
+    padding: 10px;
+    color: white;
+}
+.head4 h6{
+    border: 5px solid rgb(20, 112, 12);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(106, 171, 8);
+    padding: 10px;
+    color: white;
+}
+.blu li{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.soon{
+    border: 5px solid gainsboro;
+    background-color: ghostwhite;
+
+}
+.soon h5{
+    padding-top: 30px;
+    font-weight: 700;
+    color: green;
+}
+.soon h6{
+    font-weight: 700;
+    color: green;
+}
+.foot h4{
+    color: green;    
+}
+.foot li{
+    font-size: 12px;
+    list-style-type: none;
+
+}
+.foot a{
+    text-decoration: none;
+    color: black;
+
+}
+.foot i{
+    font-size: 30px;
+    /* border-radius: 50%; */
+    color: rgb(72, 72, 72);
+}
+.foot i:hover{
+  transition: .3s ease-in;
+  color: gray;
+}
+.welcome{
+    display: flex;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1199px){
+    .head4 h6{
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    .head3 h5{
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 10px;
+        font-size: 15px;
+
+    }
+  .offe{
+    padding-top: 20px;
+  }
+}
+
+@media(max-width: 991px){
+    .foot h4{
+        font-size: 15px;
+    }
+    .foot i{
+        font-size: 20px;
+        color: rgb(72, 72, 72);
+    }
+    .footer-img1{
+        height: 20px;
+        width: 30px;
+    }
+    .footer-img4{
+        height: 15px;
+        width: 30px;
+    }
+    .footer-img2{
+        height: 30px;
+        width: 40px;
+    }
+    .footer-img3{
+        height: 20px;
+        width: 30px;
+    }
+    .more{
+        flex-wrap: wrap;
+    }
+ .pin{
+    flex-wrap: wrap;
+ }
+ .ping{
+    margin-top: 0px;
+ }
+ .text6 h4{
+    font-weight: 700;
+    font-size: 16px;
+    }
+    .text6 p{
+        font-size: 11px;
+    }
+    .divs{
+        height: 250px;
+    }
+    .shop h6{
+        font-size: 12px;
+    }
+    .shop p{
+        font-size: 12px;
+    }
+    .head2 h5{
+        font-size: 15px;
+    }
+    .head0 h4{
+        font-size: 15px;
+    }
+}
+@media(max-width: 767px){
+    .divs{
+        height: 100%;
+    }
+    .sab{
+        margin-right: 50px;
+    }
+    .text6 h4{
+        font-weight: 700;
+        font-size: 20px;
+        }
+        .text6{
+            margin: -24px;
+            }
+            .cen p{
+                font-size: 15px;
+            }
+          .welcome {
+            flex-wrap: wrap;
+            text-align: center;
+          }
+          .foot{
+            width: 50%;
+          }
+       .foot li{
+        list-style-type: none;
+       }
+          
+}
+@media(max-width: 470px){
+    .offer2 h2{
+        font-size: 14px;
+    }
+    .offer2 p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 397px){
+
+    .sab{
+     flex-wrap: wrap; 
+    }
+    .foot{
+        width: 100%;
+      }
+}
+@media(max-width: 396px){
+  
+    .divs{
+        height: 100%;
+        margin-right: -50px;
+    } 
+    .herbal img{
+        height: 100%;
+    }
+    .cen p{
+        font-size: 12px;
+    }
+    .sab{
+        display: flex;
+        justify-content: space-around;
+        border: 5px solid gainsboro; 
+        text-align: center; 
+        padding: 10px 0px 10px 0px; 
+    }
+}
+@media(max-width: 379px){
+    .sab{
+        height: 200px;
+        width: 230px;
+        margin-left: -13px;
+    }  
+    .divs{
+        height: 100%;
+        margin-right: 50px;
+    } 
+    .text6{
+        margin: -24px;
+        }
+}
+@media(max-width: 366px){
+    .sab{
+        height: 200px;
+        width: 230px;
+        margin-left: -25px;
+    }  
+    .divs{
+        height: 100%;
+        margin-right: -50px;
+    } 
+    .age {
+        padding-right: 10px;
+    }
+    .text6{
+        margin: -24px;
+        }
+        .ping{
+            margin-top: -100px;
+         }
+}
+
+@media(max-width: 350px){
+    .sab{
+        height: 200px;
+        width: 150px;
+        margin-left: 5px;
+    }
+    .text6{
+        margin: -24px;
+        }  
+}
+@media(max-width: 326px){
+    .sab{
+        height: 200px;
+        width: 170px;
+        margin-left: -10px;
+    }
+    .text6{
+        margin: -24px;
+        }  
+}
+@media(max-width: 316px){
+    .sab{
+        height: 200px;
+        width: 170px;
+        margin-left: -20px;
+    }
+    .text6{
+        margin: -24px;
+        }  
+}
+@media(max-width: 299px){
+    .sab{
+        height: 200px;
+        width: 170px;
+        margin-left: -26px;
+    }
+    .text6{
+        margin: -24px;
+        }  
+}
+@media(max-width: 293px){
+    .sab{
+        height: 200px;
+        width: 170px;
+        margin-left: -33px;
+    }
+    .text6{
+        margin: -24px;
+        }  
+}
+@media(max-width: 278px){
+    .sab{
+        height: 200px;
+        width: 150px;
+        margin-left: -25px;
+    }
+    .text6{
+        margin: -25px;
+        }  
+}

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Offcanvas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="icons/all.min.css">
+        <link rel="stylesheet" href="bootstrapmin/bootstrap.min.css">
+</head>
+<body>
+
+    <section class=" Des_mond">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a style="font-size: 10px;" class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <!-- <span class="navbar-toggler-icon ion"></span> -->
+                <i class="fa fa-user"></i>
+              </a>
+           
+              <a class="navbar-brand mx-3 market" href="#">FRESH <span style="color: green;letter-spacing: 1px;">Market</span></a>
+              <button style="font-size: 10px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-home"></i>
+              </button>
+              <button style="font-size: 10px;" class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                    <form class=" d-flex mx-auto trol">
+                    <input class="form-control me-2" size="30%" type="search" placeholder="Search Your Products Here.." aria-label="Search">
+                 <a href="#"><i class="fa fa-search"></i></a> 
+                  </form>
+
+                <span class="navbar-text">
+                  <div class="d-flex basket mt-2">
+                    <div>
+                      <i class="fa fa-shopping-basket"></i>
+                    </div>
+                    <div class="ms-4">
+                      <select name="" id="" class="bg-light" style="border: none; font-weight: 700; font-size: 20px;">
+                        <option value="" style="font-size: 13px;">60.00</option>
+                        <option value="" style="font-size: 13px;">50.00</option>
+                        <option value="" style="font-size: 13px;">40.00</option>
+                        <option value="" style="font-size: 13px;">30.00</option>
+                        <option value="" style="font-size: 13px;">20.00</option>
+
+                      </select>
+                      <p ></p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </nav>
+             
+
+          <!-- Navbar 2 SEction -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+
+    <div class="collapse navbar-collapse nav2" id="navbarNav">
+      <ul class="navbar-nav p-2">
+        <li class="nav-item mx-4">
+          <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">VEGETABLES</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">FRUITS</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">RICE & PASTA</a>
+        </li>
+         <li class="nav-item mx-4">
+          <a class="nav-link" href="#">PINEAPPLES</a>
+        </li>
+         <li class="nav-item mx-4">
+          <a class="nav-link" href="#">TOMATOES</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Nav 3 Section -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse nav3" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="font-weight: 750;color: grey; animation : move 10s infinite;animation-delay: 5s;">Welcome To My Page</a>
+        </li>
+      </ul>
+      <span class="navbar-text wish">
+        <a href="#"><button>My Account</button></a><span style="font-weight: 800;">|</span>
+         <a href="#"><button>My Wishlet</button></a><span style="font-weight: 800;">|</span>
+        <a href="#"><button>My Cart</button></a><span style="font-weight: 800;">|</span>
+        <a href="#"><button>Checkput</button></a><span style="font-weight: 800;">|</span>
+        <a href="#"><button>Log in</button></a>
+
+      </span>
+    </div>
+  </div>
+</nav>
+                  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Button with data-bs-target
+                  </button> -->
+              
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">CALCULATOR</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="con">
+                            <div class="inpt">
+                                <form action="">
+                                    <input type="text" placeholder="0" id="inp">
+                                </form>
+                              </div>
+        
+                              <div class="bt">
+                                <button style="padding: 3px 10px;" onclick="cls()">C</button>
+                                <button onclick="Add_v('/') ">➗</button>
+                                <button style="padding: 3px 10px;" onclick="Add_v('*')">*</button>
+                                <button onclick="cancel()">dl</button>
+                              </div>
+        
+                              <div class="bt2">
+                                <button onclick="Add_v(7)">7</button>
+                                <button onclick="Add_v(8)">8</button>
+                                <button onclick="Add_v(9)">9</button>
+                                <button onclick="Add_v('-')">-</button>
+                              </div>
+        
+                              <div class="bt2">
+                                <button onclick="Add_v(4)">4</button>
+                                <button onclick="Add_v(5)">5</button>
+                                <button onclick="Add_v(6)">6</button>
+                                <button onclick="Add_v('+')">+</button>
+                              </div>
+        
+                              <div class="bt2">
+                                <button onclick="Add_v(1)">1</button>
+                                <button onclick="Add_v(2)">2</button>
+                                <button onclick="Add_v(3)">3</button>
+                                <button onclick="Add_v('**')">^</button>
+                              </div>
+        
+                              <div class="bt2">
+                                <button onclick="Add_v(0)">0</button>
+                                <button onclick="Add_v('.')">.</button>
+                                <button style="padding: 3px 30px;" onclick="exe()">=</button>
+                              </div>
+                        </div>
+
+                        <div class="mt-5 text-center">
+                            <h1 style="color: black; font-size: 15px;">Designed By Des_mond</h1>
+                        </div>
+                    </div>
+                  </div>
+         
+    </section>
+
+
+
+<!-- Image Section -->
+<section class="pt-">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 shop">
+                <div class="pin" style=" height: 400px;" >
+                    <div class="">
+                        <img src="image/sofa.png" class="" width="100%" alt="">
+                    </div>
+                    <div class="ping mx-5">
+                        <h2>GROCERY</h2>
+                        <h2>SHOPPING</h2>
+                        <P>In affordable price</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="shop text-center">
+                      <div class="free pt-4">
+                          <h6>FREE DELIVERY & GET</h6>
+                       <h6 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">10% DISCOUNT</h6>
+                       <P>On every Hegislered User</P>
+                       </div>
+                          <div class="more">
+                            <div>
+                              <p>Read More......</p>
+                            </div>
+                            <div>
+                              <img src="image/logo.png" class="fa-fade" width="100px" height="80px" alt="">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-12 pt-3">
+                    <div class="shop text-center">
+                      <div class="pt-4 herbal">
+                         <h6>HERBAL &AYURVEDIC</h6>
+                      <h6>& SPA PRODUCTS</h6>
+                      </div>
+                        <img src="image/beauty.png" class="w-100 " height="140px" alt="">   
+                    </div>
+                </div>
+            </div>
+              </div>
+            
+
+        </div>
+    </div>
+</section>
+
+
+      <!-- Image2 Section -->
+        <section class="p-5">
+            <div class="container pb-5" style="border-left: 5px solid gainsboro;border-right: 5px solid gainsboro;border-bottom: 5px solid gainsboro;">
+             <div class="row">
+              <div class="row">
+                <div class="col-md-3 ">
+                  <div class="head2"><h5>CATEGORIES </h5></div>
+                </div>
+                <div class="col-md-8 head0">
+                  <h4 style="color: green;">LATEST PRODUCT</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row">
+                <div class="col-md-12">
+                  <div class="tab">
+                    <div class="d-flex align-items-center tab1 justify-content-between">
+                      <div><h6>Vegetables</h6></div>
+                      <div><h3>+</h3></div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="tab">
+                      <div class="d-flex align-items-center tab1 justify-content-between">
+                        <div><h6>Fruits</h6></div>
+                        <div><h3>+</h3></div>
+                      </div>
+                    </div>
+                </div>
+             
+                <div class="col-md-12">
+                  <div class="tab">
+                    <div class="d-flex align-items-center tab1 justify-content-between">
+                      <div><h6>Rice & Pasta</h6></div>
+                      <div><h3>+</h3></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="tab">
+                  <div class="d-flex align-items-center tab1 justify-content-between">
+                    <div><h6>PineApple</h6></div>
+                    <div><h3>+</h3></div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="tab">
+                <div class="d-flex align-items-center tab1 justify-content-between">
+                  <div><h6>Tomatoe</h6></div>
+                  <div><h3>+</h3></div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-12 mt-3">
+            <div class="head3"><h5>MY CART</h5></div>
+            <p style="font-weight: 600;">You have no items in your shipping cart</p>
+            </div>
+
+            <div class="col-md-12 mt-3">
+              <div class="head4"><h6>COMMUNITY POLL</h6></div>
+              <p style="font-weight: 600;">What is your favourite color</p>
+              <ul class="blu" style="list-style-type: circle;">
+                <li>Green</li>
+                <li>Black</li>
+                <li>White</li>
+                <li>Red</li>
+              </ul>
+              </div>
+              <div class="col-md-12 mt-3 mb-4">
+                <div class="head4"><h6>COMPARE PRODUCTS</h6></div>
+                <p style="font-weight: 600;">You have no items to compare</p>
+                <div>
+                  <div class="text-center soon">
+                    <h5>Hurry Offer</h5>
+                    <h6>Ends Soon</h6>
+                    <div class="">
+                      <img src="image/apple (2).png" class="w-100" alt="">
+                    </div>
+
+                  </div>
+                </div>
+                </div>
+            
+              </div>
+            </div>
+                   
+                 
+
+
+                    <div class="col-md-8 mx-4">
+                      <div class="row">
+                    
+                      </div>
+                      <div class="row justify-content-between">
+                        <div class="col-md-4 divs  text6 mb-4">
+                            <div class="age">
+                                <img src="image/apple (2).png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center">
+                              <h4 style="font-weight: 700;">Foreign Apple</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$160.00</span>-$150.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6 mb-4">
+                            <div>
+                                <img src="image/carbb.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4>Carbbage</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$120.00</span>-$100.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6">
+                            <div>
+                                <img src="image/apple.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4 style="font-weight: 700;">Reddish Apple</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$100.00</span>-$95.00</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-5">
+                        <div class="col-xl-6 sab2">
+                          <div class="sab">
+                            <div class="offer1 mb-3">
+                              <i class="fa fa-truck"></i>
+                            </div>
+                            <div class="offer2 mx-4">
+                              <h2>FREE SHIPPING</h2>
+                              <p>On Order Over $30 Offer today</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 offe">
+                          <div class="sab">
+                            <div class="offer1 mb-3">
+                              <i class="fa fa-tty"></i>
+                            </div>
+                            <div class="offer2 mx-4">
+                              <h2>GIVE US CALL</h2>
+                              <p>1: 800 (+23 4533 6773 87679)</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row pt-4 justify-content-between mt-4">
+                        <div class="col-md-4 divs text6 mb-4">
+                            <div>
+                                <img src="image/melon.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-5">
+                              <h4 style="font-weight: 700;">Water Melon</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$90.00</span>-$85.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6 mb-4">
+                            <div>
+                                <img src="image/pineapple.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4 style="font-weight: 700;">PineApple</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$80.00</span>-$85.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6">
+                            <div>
+                                <img src="image/plate (1).png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4 style="font-weight: 700;">Mixed Fruits</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$180.00</span>-$170.00</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row pt-4 justify-content-between mt-4">
+                        <div class="col-md-4 divs text6 mb-4">
+                            <div>
+                                <img src="image/apple.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4 style="font-weight: 700;">Reddish Apple</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$100.00</span>-$95.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6 mb-4">
+                            <div>
+                                <img src="image/melon.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-5">
+                              <h4 style="font-weight: 700;">Water Melon</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$90.00</span>-$85.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 divs text6">
+                            <div>
+                                <img src="image/carbb.png" class="w-100" alt="">
+                            </div>
+                            <div class="text-center mt-4">
+                              <h4 style="font-weight: 700;">Carbbage</h4>
+                              <p style="font-weight: 750;"><span style="color: red;">$120.00</span>-$110.00</p>
+                            </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+      <!-- Footer Section -->
+      <section>
+        <div class="mb-4" style="background-color: rgb(180, 180, 180); height: 3px;">
+          <hr>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="welcome">
+              <div class="col-md-3 foot foos">
+                <div><h4>INFORMATION</h4></div>
+                <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Private Policy</a></li>
+                <li><a href="#">Terms & Collection</a><li>
+                </ul>
+              </div>
+              <div class="col-md-3 foot foo">
+                <div><h4>CUSTOMER SERVICE</h4></div>
+                <ul>
+                <li><a href="#">Customer Care</a></li>
+                <li><a href="#">Transaction</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">International Service</a><li>
+                </ul>
+              </div>
+              <div class="col-md-3 foot foo1">
+                <div><h4>MY ACCOUNT</h4></div>
+                <ul>
+                <li><a href="#">My Product</a></li>
+                <li><a href="#">My Datas</a></li>
+                <li><a href="#">My Account</a></li>
+                <li> 
+                  <a href="#">My Persoanal Info</a>
+                  <li>
+                </ul>
+              </div>
+              <div class="col-md-3 foot foo2">
+                <div><h4>FELLOW ME</h4></div>
+                <div class="pt-2">
+                <a href="#"> <i class="fab fa-facebook mx-1"></i></a>
+                <a href="#"> <i class="fab fa-twitter mx-1"></i></a>
+                <a href="#"> <i class="fab fa-linkedin mx-1"></i></a>
+                <a href="#"> <i class="fab fa-pinterest mx-1"></i></a>
+                </div>
+                <div class="">
+               <a href="#"> <img class="mx-1 footer-img1" src="image/logo4.png" height="25px" width="35px" alt=""></a>  
+                 <a href="#"> <img class="mx-1 footer-img4"  src="image/logo3 (1).png" height="20px" width="30px" alt=""></a>
+                  <a href="#"><img class="mx-1 footer-img2"  src="image/logo3 (2).png" height="50px" width="50px" alt=""></a>
+                   <a href="#"><img class="mx-1 footer-img3"  src="image/icon.png" height="30px" width="50px" alt=""></a>
+
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </footer>
+      
+        <div class="mb-4" style="background-color: rgb(168, 163, 163); height: 2px;">
+          <hr>
+        </div>
+        <div class="text-center cen">
+          <p>&copy CopyRight Reserved. Designed By Des_mond</p>
+        </div>
+      </section>
+
+
+    <script src="index.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
